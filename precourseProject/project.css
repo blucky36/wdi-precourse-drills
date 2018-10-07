@@ -1,0 +1,103 @@
+.header {
+
+}
+body {
+    background-image: url("http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/36/gd/p036gdvm.jpg");
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+:root {
+  --filter: (
+    filter: @svg-filter(<svg>
+      <filter>
+        <feTurbulence type="fractalNoise"
+          baseFrequency=".07" numOctaves="1" />
+        <feDisplacementMap in="SourceGraphic" scale="666" />
+      </filter>
+    </svg>);
+  );
+}
+/* :root {
+  --filter: (
+    filter: @svg-filter(<svg>
+      <filter>
+        <feTurbulence type="fractalNoise"
+          baseFrequency=".07" numOctaves="1" />
+        <feDisplacementMap in="SourceGraphic" scale="666" />
+      </filter>
+    </svg>);
+  );
+} */
+.doodling{
+  margin: 0 auto;
+  height:1700px;
+  width:1000px;
+}
+
+.doodle2{
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+.pyramids{
+  margin: 0 auto;
+  height:100%
+  width:100%
+}
+h1 {
+opacity: .5;
+display: flex;
+align-items: center;
+justify-content: center;
+align-content: center;
+height: 100%;
+width: 100%;
+margin: 0;
+font-size: 5vw;
+font-family: 'Luckiest Guy', cursive;
+color: skyblue;
+letter-spacing: 0.5rem;
+mix-blend-mode: multiply;
+text-shadow: 3px 3px 3px rgba(0, 0, 0, 1), 2px 2px 40px rgba(255, 255, 255, 0.7);
+}
+h2 {
+  color: #C71585;
+  text-align: center;
+}
+p {
+background: rgb(255,26,0);
+background: -moz-linear-gradient(left, rgba(255,26,0,1) 0%, rgba(0,242,16,1) 100%);
+background: -webkit-linear-gradient(left, rgba(255,26,0,1) 0%,rgba(0,242,16,1) 100%);
+background: linear-gradient(to right, rgba(255,26,0,1) 0%,rgba(0,242,16,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#00f210',GradientType=1 );
+}
+li {
+  font-size: 110%;
+  color: yellow;
+}
+
+img.daron {
+  width: 1000px;
+}
+
+.container{
+  height: 100px;
+  width: 400px;
+background: -moz-linear-gradient(left, rgba(249,49,246,1) 0%, rgba(204,98,241,0) 36%, rgba(125,185,232,0) 100%);
+background: -webkit-linear-gradient(left, rgba(249,49,246,1) 0%,rgba(204,98,241,0) 36%,rgba(125,185,232,0) 100%);
+background: linear-gradient(to right, rgba(249,49,246,1) 0%,rgba(204,98,241,0) 36%,rgba(125,185,232,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f931f6', endColorstr='#007db9e8',GradientType=1 );
+  margin: 0 auto;
+
+}
+button {
+background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(30,87,153,0.8) 15%, rgba(30,87,153,1) 19%, rgba(30,87,153,1) 20%, rgba(41,137,216,1) 50%, rgba(30,87,153,1) 80%, rgba(30,87,153,1) 81%, rgba(30,87,153,0.8) 85%, rgba(30,87,153,0) 100%);
+background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%);
+background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#001e5799',GradientType=1 );
+color: red;
+}
+
+h3 {
+  background: orange;
+  text-align: center;
+}

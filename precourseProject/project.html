@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Balake</title>
+      <link rel="stylesheet" href="project.css">
+      </link>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.4.8/css-doodle.min.js">
+      </script>
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+      </script>
+      <script
+
+      type="text/javascript" src="project.js">
+      </script>
+      <!--defer on script breaks buttons-->
+  </head>
+  <body>
+    <div class="doodling">
+      <css-doodle>
+      :doodle {
+        @grid: 50x1 / 100%;
+        @use: var(--filter);
+        @shape: hypocycloid 10;
+      }
+
+
+      :container {
+        animation: r 40s linear infinite;
+      }
+      @place-cell: center;
+      @size: 100% 2vmin;
+      background: @pd(purple,violet,blue);
+      transform-origin: 1vmin center;
+      transform:
+        translateX(50%)
+        rotate(calc(@i() * 360deg / @size()));
+
+      @keyframes r {
+        to { transform: rotate(1turn) }
+      }
+      </css-doodle>
+    </div>
+
+      <h1 class = "header">A Glimpse into my Life
+      </h1>
+    </div>
+      <hr/>
+      <h2>list of favorite places i've been to with images</h2>
+        <ol>
+          <li>St. Marks Basilica: Venice Italy <img src="https://media.ceetiz.com/activity/ACAVEN006/thumbnails/642x450/fotolia_44176315_subscription_xxl.jpg" alt="">
+          </li>
+            <p>I couldn't find a single image to do this magnificent work of architecture justice.  the interior has stunning mosaics made from breathtaking colors.  The doge palace is connected to the basilica which contains royal apartments, the bridge of sighs, and even a very old prison with limestone walls.  There is a massive clocktower in st. Marks square and there are thousands of pigeons that will eat the bread straight out of your hand roaming around the grounds.
+            </p>
+          <li>StoneHenge: Wiltshire England <img src="https://scontent.fapa1-1.fna.fbcdn.net/v/t1.0-9/15826411_10209857571048754_8879658274349523328_n.jpg?_nc_cat=0&oh=dd122cafa7ad5810001f3256be0f6e5a&oe=5C2C6CC9" alt="">
+          </li>
+            <p>In my free time I enjoy studying the mysteries of life.  One of them to ponder is StoneHenge.  The geology of the area suggests the rocks were most closely found in Northern Africa and transported all the way to StoneHenge.  The site was constructed roughly 5000 years ago when moving these massive rocks was nearly impossible with their technology.  The constructors were the high priests of the Celts, who constructed it for sacrificial ceremonies. Other people arugue that the druids built it for studying astronomy.  The site is SURROUNDED by burrial mounds, and is located almost perfectly on the prime meridian.  seems too complex for people who were alive at the time and still remains an enigma to a lot of people today.
+            </p>
+          <li>Napali Coast: Kawaii Hawaii <img src="https://www.beautifulworld.com//wp-content/uploads/2016/10/Kee-beach.jpg" alt="">
+          </li>
+            <p>I love this image because it shows the most dangerous beach in the world.  The beach has claimed over 150 lives of the unsuspecting people who get pulled into the very strong riptide.  It is highly discouraged to allow the water to reach your knees.
+            </p>
+          <li>Alcova Wyoming<img src="https://paddling.com/storage/images/trip-reports/rhAR1.jpg" alt="">
+          </li>
+            <p>One of my hobbies inclues fishing.  This is probably the best rainbow trout fishing spot I have ever been to.  If you go during the correct season the water below the dam where the trout go to spawn will be running at a manageable pace to flyfish narrow streams.  Once you find the "honey hole" and the correct fly you will be picking them out of the river like a sushi buffet.
+            </p>
+          <li>Top of Bear Peak<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Bear_Peak%2C_Boulder_July_2016_2.jpg/1200px-Bear_Peak%2C_Boulder_July_2016_2.jpg" alt="">
+          </li>
+            <p>as much as I enjoy hiking the flatirons I feel I need to do it more often.  It's such a blessing having a 3-5 hour hike to a beautiful peak right in your back yard.  I usually save the occasion for when the stresses of life finally get to me and I feel like i'm about to explode.  The feeling of looking down and being able to see where you were born and where you have lived your entire life right in front of you all in one panoramic veiw strikes up a lot of thought.  I have found myself sitting at the top until the very last moment so I don't have to hike back down in the dark.  I Was born in Denver Colorado, raised in Lousiville Colorado, went to college at CU Boulder, reside in Lafayette and Superior Colorado.  therefore I feel a deep connection with the flatirons having been around them my entire life.
+            </p>
+        </ol>
+      <h2>Music is my Life</h2>
+        <p>Music has been a key part in my life to get me through whatever I need to get through.  Weather it be anxiety, or just a long work day in the sun on the golf course.  I will sing with no shame wherever I am.
+        </p>
+        <p>this is one of my hundred favorite songs (specifically one I have saved on my hard drive)
+        </p>
+          <audio src="C:\Users\blucky36\Documents\My Music\Stairway_To_Heaven.mp3" controls autoplay>
+            <!-- will probably only work on my computer sorry I can't share this song with you :(-->
+          </audio>
+        <p>this is my number one favorite song at the moment
+          <a href="https://www.youtube.com/watch?v=e7jfg3yH-i0">
+            <button>ctrl + Click me for song :)
+            </button>
+          </a>
+        </p>
+        <p>A sweet picture of Daron Malakian to go with the youtube song</p>
+          <img class = "daron" src="https://www.revolvermag.com/sites/default/files/media/images/article/gettyimages-694373284.jpg" alt="">
+      <h2> JS div beware
+      </h2>
+      <div class="container">
+        <button onclick ="writeRandomQuote()">Random Quote
+        </button>
+        <button class = "fb" onclick = "fizzBuzz()">fizzBuzz
+        </button>
+        <button onclick ="showDate()">Show Date
+        </button>
+        <button onclick ="showPi()">Who wants to know the value of pi?
+        </button>
+        <a href = "https://www.youtube.com/watch?v=s8MDNFaGfT4">
+          <button class = "pbj" >Is it Peanut Butter Jelly Time? ctrl + click
+          </button>
+        </a>
+      </div>
+      <a href = "https://www.facebook.com/blake.bollman.36">
+        <h3>Facebook Profile :D click me
+        </h3>
+      </a>
+      <a href = "https://www.youtube.com/watch?v=MBRqu0YOH14&index=2&list=PLFs4vir_WsTxontcYm5ctqp89cNBJKNrs">
+        <button>click me when you are done with the page to learn about Optimistic Nihilism
+        </button>
+      </a>
+      <h2> My Four Favorite Hobbies </h2>
+        <ul>
+          <li>Golfing!
+            <img class="golf1" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/40097749_10214456807026779_4856782209824063488_n.jpg?_nc_cat=0&oh=e2ef62834b31e3c24b3946da2399dd71&oe=5C013DBB">
+            <img class="golf2" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/40275212_10214456805906751_6993821493792604160_n.jpg?_nc_cat=0&oh=4c4babc63b6cccde54c17a68647e2c67&oe=5BF366EF">
+            <img class="golf3" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/40092252_10214456805826749_7385714109678878720_n.jpg?_nc_cat=0&oh=eb56552653c69c0a8eb88592ee04dbf8&oe=5C2D73B2">
+            <img class="golf4" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/40079749_10214456805786748_7786538131532021760_n.jpg?_nc_cat=0&oh=a95a421b31a4b337f5094c1f6416b06f&oe=5BFCCFB0">
+            <img class="golf5" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/11168029_10205623115910022_7436546567063646135_n.jpg?_nc_cat=0&oh=2675c6cad0c2f75bd633828d9188662b&oe=5BF5D828">
+            <p>I have been a golfer since I could walk, I have played most of the courses in Colorado and a handfull of courses outside the state and I wish to golf outside the country as many times as I can :)
+            </p>
+          </li>
+          <li>Skiing!
+            <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-0/p206x206/197998_1857952241356_2303770_n.jpg?_nc_cat=0&oh=c8bb7c3537d0217523b87137ceb6588f&oe=5C3B1A15">
+            <p>I have been skiing as well since I could walk.  I favor the side of the mountain with the most moguls, but I wouldn't mind racing you down the steepest slope.
+            </p>
+          </li>
+          <li>Video Games @.@
+            <img src="https://i.ytimg.com/vi/WSM5hrLZvEY/maxresdefault.jpg">
+            <p>If I get the time in my schedule I enjoy recharging and veging out trying to master some obscure video game skill.
+            </p>
+          </li>
+          <li>Fishing!
+            <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1506008_10201906544358056_1103241115_n.jpg?_nc_cat=0&oh=ebc33da0509b4755b8783c0cff87b1c2&oe=5BF60CD7">
+            <p>I have been from colorado to hawaii to belieze fishing and I absolutely love it in all forms.  "its like yoga but I get to kill something ~Ron Swanson"
+            </p>
+          </li>
+        </ul>
+    <div class = doodle2>
+      <css-doodle>
+	       :doodle {
+		         @grid: 18 / 100vmax;
+             @shape: bud,10;
+		         background: color of choice;
+             animation: nudge 5s linear infinite alternate;
+          }
+
+	       --hue: calc(180 + 1.5 * @row() * @col());
+	       background: hsl(var(--hue), 50%, 70%);
+	       margin: -.5px;
+	       <!-- transition: @r(.5s) ease; -->
+
+	       clip-path: polygon(@pick(
+		       "0 0, 100% 0, 100% 100%",
+		       "0 0, 100% 0, 0 100%",
+		       "0 0, 100% 100%, 0 100%",
+		       "100% 0, 100% 100%, 0 100%"
+	        ));
+      </css-doodle>
+    </div>
+
+    <a href = "projectPage2.html">
+      <button>
+        PAGE 2
+      </button>
+    </a>
+
+  </body>
+</html>
